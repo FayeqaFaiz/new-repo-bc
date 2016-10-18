@@ -43,7 +43,7 @@
 >  
  * BCpage
    * This file contains the front end page developed using bootstrap
-   *  * An GIF image/video to show how the code works can be found here: [GIF-BCpage](https://github.com/FayeqaFaiz/new-repo-bc/blob/master/Videos.md)
+   *  * An GIF image/video to show how the code works can be found here: [GIF-BCpage](https://github.com/FayeqaFaiz/new-repo-bc/blob/master/videos1.md)
    
 >  
  * bc-new
