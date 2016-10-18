@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>try-Bluecirrus</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="sidebar.js"></script>
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+
+<style type='text/css'>
+span.view-title {<!--from w ww .j a  v a  2 s . c o  m-->
+  font-size: 24px;
+  color: #999999;
+  font-weight: normal !important;
+  line-height: 30px;
+}
+
+.view-header {
+  background-color:#7FFFD4;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px 40px 20px 40px;
+  border-bottom: solid 1px #bbbbbb;
+}
+
+html, body {
+   height: 100%;
+}
+
+.wrapper, .row {
+   height: 100%;
+   margin-left:0;
+   margin-right:0;
+}
+
+.wrapper:before, .wrapper:after,
+.column:before, .column:after {
+    content: "";
+    display: table;
+}
+
+.wrapper:after,
+.column:after {
+    clear: both;
+}
+
+#sidebar {
+    background-color: #eee;
+    padding-left: 0;
+    float: left;
+    min-height: 100%;
+}
+
+#sidebar .collapse.in {
+    display: inline;
+}
+
+#sidebar > .nav>li>a {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#main {
+    padding: 15px;
+    left: 0;
+}
+
+/*
+ * off canvas sidebar
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 768px) {
+    #sidebar {
+        min-width: 44px;
+    }
+    
+    #main {
+        width: 1%;
+        left: 0;
+    }
+    
+    #sidebar .visible-xs {
+       display:inline !important;
+    }
+    
+    .row-offcanvas {
+       position: relative;
+       -webkit-transition: all 0.4s ease-in-out;
+       -moz-transition: all 0.4s ease-in-out;
+       transition: all 0.4s ease-in-out;
+    }
+    
+    .row-offcanvas-left.active {
+       left: 45%;
+    }
+    
+    .row-offcanvas-left.active .sidebar-offcanvas {
+       left: -45%;
+       position: absolute;
+       top: 0;
+       width: 45%;
+    }
+} 
+ 
+ 
+@media screen and (min-width: 768px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+
+  .row-offcanvas-left.active {
+    left: 3%;
+  }
+
+  .row-offcanvas-left.active .sidebar-offcanvas {
+    left: -3%;
+    position: absolute;
+    top: 0;
+    width: 3%;
+    text-align: center;
+    min-width:42px;
+  }
+  
+  #main {
+    left: 0;
+  }
+}
+</style>
+
+
+</head>
+<body>
+<!--main container  -->
+<div class="container-fluid">
+
+<!--header and search bar  -->
+ <div class="view-header">
+    <span class="view-title" style="color:#00008B"><h2>W3 Pod Works Blue Cirrus</h2></span>
+    <div class="pull-right">
+      <a
+        style="line-height: 30px; margin-right: 20px; vertical-align: bottom; float: left;">
+        <!-- <span class="pointer">more options</span> -->
+      </a>
+      <form class="form-inline pull-left"
+        placeholder="client"
+        css-class="input-xxlarge">
+        <input class="input-xxlarge ng-dirty" type="text"
+          placeholder="W3 search"
+          ng-model="model">
+        <button disabled="disabled" class="btn btn-info" type="submit">
+          <i class="icon-search"></i>&nbsp;Search
+        </button>
+      </form>
+    </div>
+    <div class="clearfix"></div>
+    <div class="pull-right"></div>
+    <div class="clearfix"></div>
+  </div>
+ </div>
+ 
+
+
+<!-- phy mc container and side nav-->
+<div class="container-fluid">
+
+
+
+<!-- ====================== -->
+<div class="col-sm-4"> 
+
+<div class="wrapper">
+    <div class="row row-offcanvas row-offcanvas-left">
+        <!-- sidebar -->
+        <div class="column col-sm-4 col-xs-1 sidebar-offcanvas" id="sidebar">
+            <ul class="nav" id="menu">
+                <li><a href="#"><i class="fa fa-list-alt"></i> <span class="collapse in hidden-xs">Link 1</span></a></li>
+                <li><a href="#"><i class="fa fa-list"></i> <span class="collapse in hidden-xs">Stories</span></a></li>
+                <li><a href="#"><i class="fa fa-paperclip"></i> <span class="collapse in hidden-xs">Saved</span></a></li>
+                <li><a href="#"><i class="fa fa-refresh"></i> <span class="collapse in hidden-xs">Refresh</span></a></li>
+                <li>
+                    <a href="#" data-target="#item1" data-toggle="collapse"><i class="fa fa-list"></i> <span class="collapse in hidden-xs">Menu <span class="caret"></span></span></a>
+                    <ul class="nav nav-stacked collapse left-submenu" id="item1">
+                        <li><a href="google.com">View One</a></li>
+                        <li><a href="gmail.com">View Two</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-target="#item2" data-toggle="collapse"><i class="fa fa-list"></i> <span class="collapse in hidden-xs">Menu <span class="caret"></span></span></a>
+                    <ul class="nav nav-stacked collapse" id="item2">
+                        <li><a href="#">View One</a></li>
+                        <li><a href="#">View Two</a></li>
+                        <li><a href="#">View Three</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="glyphicon glyphicon-list-alt"></i> <span class="collapse in hidden-xs">Link</span></a></li>
+            </ul>
+        </div>
+        <!-- /sidebar -->
+
+      
+    </div>
+</div>
+
+</div>
+<!--  ====================================== -->
+
+
+
+
+<div class="col-sm-2"> </div>
+
+<div class="col-sm-8">
+
+  	<div class="page-header">
+	<h2>Add Physical machine</h2>
+	</div>
+
+ 
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label class="col-sm-2" for="serialnum">serial number:</label>
+        <div class="col-sm-8">
+        <input type="serialnum" class="form-control" id="serialnum" placeholder="Enter serial number" >
+        </div>
+      </div>
+ 
+    
+ 
+    
+      <div class="form-group">
+        <label class="col-sm-2" for="sysf">system family:</label>
+        <div class="col-sm-8">
+       <input type="sysf" class="form-control" id="sysf" placeholder="Enter system family" list="list1">
+       	<datalist id="list1">
+       		<option label="l1" value="v1">
+       		<option label="l2" value="v2">
+       		<option label="l3" value="v3">
+       	</datalist>
+      </div>
+      </div>
+        
+  
+        
+   
+      <div class="form-group">
+        <label class="col-sm-2" for="stm">server type model:</label>
+        <div class="col-sm-8">
+        <input type="stm" class="form-control" id="stm" placeholder="Enter server type model" list="list2">
+        	<datalist id="list1">
+       		<option label="l1" value="v1">
+       		<option label="l2" value="v2">
+       		<option label="l3" value="v3">
+       	</datalist>
+        </div>
+      </div>
+  
+
+    
+      <div class="form-group">
+        <label class="col-sm-2" for="hm">host name <a href="http://www.google.com">(FAQ)</a> :</label>
+        <div class="col-sm-8">
+        <input type="hm" class="form-control" id="hm" placeholder="Enter host name">
+        </div>
+      </div>
+ 
+
+    
+      <div class="form-group">
+        <label class="col-sm-2" for="ip"> ip address:</label>
+        <div class="col-sm-8">
+        <input type="ip" class="form-control" id="ip" placeholder="Enter ip address">
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="col-sm-2" for="dc"> department code:</label>
+        <div class="col-sm-8">
+        <input type="dc" class="form-control" id="dc" placeholder="Enter dept code">
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="col-sm-2" for="sbn"> stpi bond number:</label>
+        <div class="col-sm-8">
+        <input type="sbn" class="form-control" id="sbn" placeholder="Enter stpi bond number">
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="col-sm-2" for="loc"> location:</label>
+        <div class="col-sm-8">
+        <input type="loc" class="form-control" id="loc" placeholder="Enter location">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-2" for="pro">no of processors:</label>
+        <div class="col-sm-8">
+        <input type="pro" class="form-control" id="pro" placeholder="Enter processors count">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-2" for="mem"> Memory(in GB):</label>
+        <div class="col-sm-8">
+        <input type="mem" class="form-control" id="mem" placeholder="Enter memory">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-2" for="hd"> total hard disk(in GBs):</label>
+        <div class="col-sm-8">
+        <input type="hd" class="form-control" id="hd" placeholder="Enter total HD">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-2" for="drive">no of hard drives</label>
+        <div class="col-sm-8">
+        <input type="drive" class="form-control" id="drive" placeholder="Enter no of drives">
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="col-sm-2" for="hba"> HBA type:</label>
+        <div class="col-sm-8">
+        <input type="hba" class="form-control" id="hba" placeholder="Enter hba type">
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="col-sm-2" for="rem"> Remarks:</label>
+        <div class="col-sm-8">
+        <input type="rem" class="form-control" id="rem" placeholder="any remarks? type here..!!">
+        </div>
+      </div>
+      
+        <div class="row">
+      <div class="form-group">        
+        <div class="col-sm-offset-2 col-sm-6">
+        <button type="submit" class="btn btn-success" >Submit</button>
+         <div class="col-sm-offset-2 col-sm-6">
+        <button type="reset" class="btn btn-primary">Reset</button>
+        </div>
+      </div>
+    </div>
+   </div>
+   
+</form>
+</div>
+</div>
+   
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

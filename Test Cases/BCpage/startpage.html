@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bluecirrus</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="page-header">
+<h2>Add Physical machine</h2>
+</div>
+
+ 
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label class="col-sm-2" for="serialnum">serial number:</label>
+        <div class="col-sm-8">
+        <input type="serialnum" class="form-control" id="serialnum" placeholder="Enter serial number" >
+        </div>
+      </div>
+ 
+    
+ 
+    
+      <div class="form-group">
+        <label class="col-sm-2" for="sysf">system family:</label>
+        <div class="col-sm-8">
+       <input type="sysf" class="form-control" id="sysf" placeholder="Enter system family" list="list1">
+       	<datalist id="list1">
+       		<option label="l1" value="v1">
+       		<option label="l2" value="v2">
+       		<option label="l3" value="v3">
+       	</datalist>
+      </div>
+      </div>
+        
+  
+        
+   
+      <div class="form-group">
+        <label class="col-sm-2" for="stm">server type model:</label>
+        <div class="col-sm-8">
+        <input type="stm" class="form-control" id="stm" placeholder="Enter server type model" list="list2">
+        	<datalist id="list1">
+       		<option label="l1" value="v1">
+       		<option label="l2" value="v2">
+       		<option label="l3" value="v3">
+       	</datalist>
+        </div>
+      </div>
+  
+
+    
+      <div class="form-group">
+        <label class="col-sm-2" for="hm">host name <a href="http://www.google.com">(FAQ)</a> :</label>
+        <div class="col-sm-8">
+        <input type="hm" class="form-control" id="hm" placeholder="Enter host name">
+        </div>
+      </div>
+ 
+
+    
+      <div class="form-group">
+        <label class="col-sm-2" for="ip"> ip address:</label>
+        <div class="col-sm-8">
+        <input type="ip" class="form-control" id="ip" placeholder="Enter ip address">
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="col-sm-2" for="dc"> department code:</label>
+        <div class="col-sm-8">
+        <input type="dc" class="form-control" id="dc" placeholder="Enter dept code">
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="col-sm-2" for="sbn"> stpi bond number:</label>
+        <div class="col-sm-8">
+        <input type="sbn" class="form-control" id="sbn" placeholder="Enter stpi bond number">
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="col-sm-2" for="loc"> location:</label>
+        <div class="col-sm-8">
+        <input type="loc" class="form-control" id="loc" placeholder="Enter location">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-2" for="pro">no of processors:</label>
+        <div class="col-sm-8">
+        <input type="pro" class="form-control" id="pro" placeholder="Enter processors count">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-2" for="mem"> Memory(in GB):</label>
+        <div class="col-sm-8">
+        <input type="mem" class="form-control" id="mem" placeholder="Enter memory">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-2" for="hd"> total hard disk(in GBs):</label>
+        <div class="col-sm-8">
+        <input type="hd" class="form-control" id="hd" placeholder="Enter total HD">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-2" for="drive">no of hard drives</label>
+        <div class="col-sm-8">
+        <input type="drive" class="form-control" id="drive" placeholder="Enter no of drives">
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="col-sm-2" for="hba"> HBA type:</label>
+        <div class="col-sm-8">
+        <input type="hba" class="form-control" id="hba" placeholder="Enter hba type">
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label class="col-sm-2" for="rem"> Remarks:</label>
+        <div class="col-sm-8">
+        <input type="rem" class="form-control" id="rem" placeholder="any remarks? type here..!!">
+        </div>
+      </div>
+
+
+
+    <div class="row">
+      <div class="form-group">        
+        <div class="col-sm-offset-2 col-sm-6">
+        <button type="submit" class="btn btn-success" >Submit</button>
+         <div class="col-sm-offset-2 col-sm-6">
+        <button type="reset" class="btn btn-primary">Reset</button>
+        </div>
+      </div>
+    </div>
+   </div>
+    </form>
+  </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

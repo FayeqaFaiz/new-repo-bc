@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archive>
+    <dir sourceOnDisk="/home/fayeqa/Fayeqa/Spring/spring-workspace/BlueCirrusNewDesign/WebContent" targetInArchive="/"/>
+    <dir sourceOnDisk="/home/fayeqa/Fayeqa/Spring/spring-workspace/BlueCirrusNewDesign/build/classes" targetInArchive="/WEB-INF/classes"/>
+</archive>

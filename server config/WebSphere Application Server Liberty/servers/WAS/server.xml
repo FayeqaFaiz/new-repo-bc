@@ -1,0 +1,80 @@
+<server description="new server">
+
+       <!-- Enable features -->
+
+   <featureManager>
+       <feature>jsp-2.2</feature>
+        <feature>localConnector-1.0</feature>
+        <feature>servlet-3.1</feature>
+        <feature>appSecurity-2.0</feature>
+        <feature>ldapRegistry-3.0</feature>
+        <feature>ssl-1.0</feature>
+        <feature>json-1.0</feature>
+        <feature>jdbc-4.1</feature>
+        <feature>adminCenter-1.0</feature>
+
+
+
+
+    </featureManager> 
+
+ <!-- Define an Administrator and non-Administrator -->
+   <basicRegistry id="basic">
+      <user name="admin" password="adminpwd"/>
+      <user name="nonadmin" password="nonadminpwd"/>
+   </basicRegistry>
+
+   <!-- Assign 'admin' to Administrator -->
+   <administrator-role>
+      <user>admin</user>
+   </administrator-role>
+
+     <ldapRegistry baseDN="o=ibm.com" host="bluepages.ibm.com" id="bluepages" ignoreCase="true" ldapType="IBM Tivoli Directory Server" port="636" realm="w3" sslEnabled="true">
+
+        <idsFilters groupFilter="(&amp;(cn=%v)(objectclass=groupOfUniqueNames))" groupIdMap="*:cn" groupMemberIdMap="groupOfUniqueNames:uniquemember" userFilter="(&amp;(emailAddress=%v)(objectclass=person))" userIdMap="*:emailAddress"/>       
+
+     </ldapRegistry>
+
+    <!-- This template enables security. To get the full use of all the capabilities, a keystore and user registry are required. -->
+
+    <!-- For the keystore, default keys are generated and stored in a keystore. To provide the keystore password, generate an 
+         encoded password using bin/securityUtility encode and add it below in the password attribute of the keyStore element. 
+         Then uncomment the keyStore element. -->
+    <!--
+    <keyStore password=""/> 
+    -->
+
+    <!--For a user registry configuration, configure your user registry. For example, configure a basic user registry using the
+        basicRegistry element. Specify your own user name below in the name attribute of the user element. For the password, 
+        generate an encoded password using bin/securityUtility encode and add it in the password attribute of the user element. 
+        Then uncomment the user element. -->
+
+
+    <!-- To access this server from a remote client add a host attribute to the following element, e.g. host="*" -->
+    <httpEndpoint httpPort="9080" httpsPort="9443" id="defaultHttpEndpoint"/>
+
+    <!-- Automatically expand WAR files and EAR files -->
+    <applicationManager autoExpand="true"/>
+
+
+    <keyStore id="defaultKeyStore" password="changeit"/>
+
+
+    <library id="DB2JCC4Lib">
+    <fileset dir="/home/fayeqa/Fayeqa/Softwares/wlp-core-all-16.0.0.2/wl/usr/servers/db2drivers" includes="db2jcc4.jar, db2jcc_license_cu.jar"/>
+</library>
+
+    <dataSource id="db2" jndiName="ipdm" supplementalJDBCTrace="false" type="javax.sql.XADataSource">
+    <jdbcDriver libraryRef="DB2JCC4Lib"/>
+
+    <properties.db2.jcc databaseName="BLUDB" password="rw704FsmYqFr" portNumber="50000" serverName="bluemix05.bluforcloud.com" user="dash106559"/>
+</dataSource>
+
+
+<httpSession securityIntegrationEnabled="false"/>
+    <applicationMonitor updateTrigger="mbean"/>
+
+    <webApplication id="BlueCirrusNewDesign" location="BlueCirrusNewDesign.war" name="BlueCirrusNewDesign"/>
+
+    <webApplication contextRoot="sdnext" id="Db-bluecirrus" location="Db-bluecirrus.war" name="Db-bluecirrus"/>
+</server>
