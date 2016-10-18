@@ -32,3 +32,19 @@
   * This folder contains the extracted form of the war file 
   * If you just want a part of it or just want to review the code you can use this
   
+>
+* Test cases:
+ * Bluecirrus 
+  * This file contains a code for the above requirement
+  
+ * BCpage
+  * This file contains the front end page developed using bootstrap
+  
+ * bc-new
+  * This is another instance of project conforming with the requirements given above.
+  
+* Server
+ * websphere server configuration file 
+ * Tomcat server
+ 
+ 
