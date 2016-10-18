@@ -30,7 +30,10 @@
 
 >
   * An GIF image/video to show how the code works :
+  Part 1:
    [![Bc1.gif](https://s17.postimg.org/unw7m4cfz/Bc1.gif)](https://postimg.org/image/mie5nyo6z/)
+  
+  Part 2:
    [![Bc2.gif](https://s15.postimg.org/rj3uzp4gb/Bc2.gif)](https://postimg.org/image/w4zz81pzb/)
   
   
