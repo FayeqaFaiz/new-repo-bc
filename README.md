@@ -27,6 +27,12 @@
 * db-bluecirrus.zip
   * This file contains a war file of the project which you can download and import to you framework and run it tot see the output
   * make sure the database configuration is changed according to your database 
+
+>
+  * An GIF image/video to show how the code works :
+   [![Bc1.gif](https://s17.postimg.org/unw7m4cfz/Bc1.gif)](https://postimg.org/image/mie5nyo6z/)
+  
+  
 >
 * bluecirrus/db-bluecirrus:
   * This folder contains the extracted form of the war file 
