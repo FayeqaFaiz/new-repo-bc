@@ -42,5 +42,9 @@
      * If there are changes made on git (like here i have added a file named "Toolchain") then on slack it will show What changes are made.
       
       [![Screenshot from 2016-10-20 14-14-49.png](https://s14.postimg.org/otc4hbx69/Screenshot_from_2016_10_20_14_14_49.png)](https://postimg.org/image/dtqx5q6r1/)
+      
+      
+**NOTE**
+You can find a GIF video of this tool chain demo here : [Toolchain-BC]()
  
  
