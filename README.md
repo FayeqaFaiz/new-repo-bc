@@ -27,8 +27,30 @@
 * db-bluecirrus.zip
   * This file contains a war file of the project which you can download and import to you framework and run it tot see the output
   * make sure the database configuration is changed according to your database 
+
+>
+  * An GIF image/video to show how the code works can be found here: [GIF-BC](https://github.com/FayeqaFaiz/new-repo-bc/blob/master/Videos.md)
+ 
 >
 * bluecirrus/db-bluecirrus:
   * This folder contains the extracted form of the war file 
   * If you just want a part of it or just want to review the code you can use this
   
+>
+* Test cases:
+ * Bluecirrus 
+   * This file contains a code for the above requirement
+>  
+ * BCpage
+   * This file contains the front end page developed using bootstrap
+   *  * An GIF image/video to show how the code works can be found here: [GIF-BCpage](https://github.com/FayeqaFaiz/new-repo-bc/blob/master/videos1.md)
+   
+>  
+ * bc-new
+   * This is another instance of project conforming with the requirements given above.
+> 
+* Server
+ * websphere server configuration file 
+ * Tomcat server
+ 
+ 
