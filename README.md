@@ -24,7 +24,7 @@
 
 ######Details About the files:
 >
-* db-bluecirrus.zip [view](https://github.com/FayeqaFaiz/new-repo-bc/blob/master/Db-bluecirrus.zip)
+* db-bluecirrus.zip :[view](https://github.com/FayeqaFaiz/new-repo-bc/blob/master/Db-bluecirrus.zip)
   * This file contains a war file of the project which you can download and import to you framework and run it tot see the output
   * make sure the database configuration is changed according to your database 
 
@@ -38,18 +38,18 @@
   
 >
 * Test cases:
- * Bluecirrus  [view code](https://github.com/FayeqaFaiz/new-repo-bc/tree/master/Test%20Cases/Bluecirrus)
+ * Bluecirrus : [view code](https://github.com/FayeqaFaiz/new-repo-bc/tree/master/Test%20Cases/Bluecirrus)
    * This file contains a code for the above requirement
 >  
- * BCpage [view code](https://github.com/FayeqaFaiz/new-repo-bc/tree/master/Test%20Cases/BCpage)
+ * BCpage: [view code](https://github.com/FayeqaFaiz/new-repo-bc/tree/master/Test%20Cases/BCpage)
    * This file contains the front end page developed using bootstrap
    *  * An GIF image/video to show how the code works can be found here: [GIF-BCpage](https://github.com/FayeqaFaiz/new-repo-bc/blob/master/videos1.md)
    
 >  
- * bc-new [view code](https://github.com/FayeqaFaiz/new-repo-bc/tree/master/Test%20Cases/bc-new)
+ * bc-new :[view code](https://github.com/FayeqaFaiz/new-repo-bc/tree/master/Test%20Cases/bc-new)
    * This is another instance of project conforming with the requirements given above.
 > 
-* Server [find server config here](https://github.com/FayeqaFaiz/new-repo-bc/tree/master/server%20config/WebSphere%20Application%20Server%20Liberty)
+* Server: [find server config here](https://github.com/FayeqaFaiz/new-repo-bc/tree/master/server%20config/WebSphere%20Application%20Server%20Liberty)
  * websphere server configuration file 
  * Tomcat server
  
